@@ -17,7 +17,7 @@ export default function TimerSlider({
   return (
     <div className="flex justify-center items-center mb-12 bg-[#161932] rounded-full p-2 relative">
       {(["pomodoro", "shortBreak", "longBreak"] as TimerMode[]).map(
-        (timerMode, index) => (
+        (timerMode) => (
           <motion.button
             key={timerMode}
             className={`relative px-6 py-4 rounded-full text-sm ${
