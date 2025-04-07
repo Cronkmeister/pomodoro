@@ -84,7 +84,9 @@ export default function CircularTimer({
         {/* Timer content */}
         <div className="relative flex flex-col items-center justify-center text-white">
           <span
-            className={`${getFontClass()} text-[100px] tracking-tighter font-bold  leading-tight`}
+            className={`${getFontClass()} text-[100px] tracking-tighter ${
+              font === "mono" ? "font-normal" : "font-bold"
+            }  leading-tight text-center tabular-nums min-w-[280px] flex justify-center`}
           >
             {formatTime(timeLeft)}
           </span>
