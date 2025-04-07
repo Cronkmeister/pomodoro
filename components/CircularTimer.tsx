@@ -37,7 +37,7 @@ export default function CircularTimer({
 
   return (
     <motion.div
-      className="relative w-[410px] h-[410px] flex items-center justify-center cursor-pointer"
+      className="relative w-[410px] h-[410px] flex items-center justify-center cursor-pointer drop-shadow-2xl"
       onClick={onClick}
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
@@ -84,9 +84,9 @@ export default function CircularTimer({
         {/* Timer content */}
         <div className="relative flex flex-col items-center justify-center text-white">
           <span
-            className={`${getFontClass()} text-[100px] tracking-tighter ${
+            className={`${getFontClass()} text-[100px] tracking-tight ${
               font === "mono" ? "font-normal" : "font-bold"
-            }  leading-tight text-center tabular-nums min-w-[280px] flex justify-center`}
+            }  leading-tight text-center min-w-[280px] flex justify-center font-mono`}
           >
             {formatTime(timeLeft)}
           </span>

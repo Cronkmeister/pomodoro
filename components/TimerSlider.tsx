@@ -48,11 +48,11 @@ export default function TimerSlider({
         animate={{
           left:
             mode === "pomodoro"
-              ? "2px"
+              ? "8px"
               : mode === "shortBreak"
-              ? "33.333%"
+              ? "34.333%"
               : "66.666%",
-          width: "33.333%",
+          width: "31.333%",
         }}
         transition={{ type: "spring", stiffness: 300, damping: 30 }}
       />
